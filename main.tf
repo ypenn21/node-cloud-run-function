@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = ">= 4.34.0"
-    }
-  }
-}
-
 data "google_project" "project" {}
 
 resource "google_artifact_registry_repository" "default" {
