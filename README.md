@@ -3,9 +3,10 @@ node cloud run functions deployment on GCP
 
 
 #Checkout node js service repo.
+
 git clone https://github.com/ypenn21/node-cloud-run-function/tree/main
 
-Install build packs for source to image build.
+#Install build packs for source to image build.
 
 sudo add-apt-repository ppa:cncf-buildpacks/pack-cli
 
