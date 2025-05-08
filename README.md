@@ -35,8 +35,11 @@ pack build --builder=gcr.io/buildpacks/builder us-central1-docker.pkg.dev/${goog
 #Provision artifact registry repo with terraform.
 
 cd ../../terraform-cloud-run
+
 terraform init
+
 terraform plan
+
 terraform apply -target=google_artifact_registry_repository.default
 
 
