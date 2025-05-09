@@ -57,3 +57,11 @@ terraform apply
 
 
 #Test the endpoint from terraform output using curl or on your browser.
+
+
+
+
+gcloud cli source to cloud run function deploy e.g. : 
+
+gcloud run deploy functionstest2   --source .   --function helloHttp   --base-image us-central1-docker.pkg.dev/serverless-runtimes/google-22/runtimes/nodejs22   --region us-central1   --image us-central1-docker.pkg.dev/genai-playground24/cloud-run-functions/cloud-run-function-v2:
+v1
