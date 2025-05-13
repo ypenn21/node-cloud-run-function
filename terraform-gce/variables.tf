@@ -28,9 +28,3 @@ variable "vm_prefix" {
   description = "the common VM names prefix"
   default     = "vm"
 }
-
-variable "region" {
-  type        = string
-  description = "the region where the resources live"
-  default     = "us-central1"
-}
