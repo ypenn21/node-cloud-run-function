@@ -30,6 +30,11 @@ resource "google_cloud_run_v2_service" "default" {
     base_image = var.base_image
     enable_automatic_updates = true
   }
+  lifecycle {
+    ignore_changes = [
+      template[0].containers[0].image
+    ]
+  }
 }
 
 # IAM permissions to allow public invocation
